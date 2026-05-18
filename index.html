@@ -3,229 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiscaal-proof Promotie-Objects | PROMOTIE</title>
+    <title>Fiscotrack | Rijdt uw BV al fiscaal-proof?</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-100 text-slate-800 antialiased">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-950">
 
-    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+    <header class="bg-slate-900/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tight text-white">
-                <span>PROMO</span><span class="text-emerald-500">TIE</span>
-            </div>
-            <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow-sm">
-                Fiscale Toelichting
+            <a href="#" class="text-xl font-bold tracking-tight text-white hover:opacity-90 transition">
+                <span>Fisco</span><span class="text-emerald-500">track</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#hoe-het-werkt" class="hover:text-emerald-400 transition">Hoe het werkt</a>
+                <a href="#pakketten" class="hover:text-emerald-400 transition">Tarieven</a>
+                <a href="#faq" class="hover:text-emerald-400 transition">Veelgestelde vragen</a>
+            </nav>
+            <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow-sm shadow-emerald-900/20">
+                Direct Toetsen
             </a>
         </div>
     </header>
 
-    <section class="max-w-6xl mx-auto px-4 py-16 md:py-20 text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight">
-            Een auto voor uw partner en/of uw kind op de BV — <span class="text-emerald-600">Zonder bijtelling</span> en fiscus-proof.
-        </h1>
-        <p class="mt-6 text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Wilt u uw partner of studerende kind op weg helpen met een veilige auto, maar de hoge privékosten of schenkbelasting vermijden? Via ons marketingplatform rijdt uw gezin een auto op kosten van uw BV, volledig legaal en fiscaal aftrekbaar.
-        </p>
-        <div class="mt-10">
-            <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white text-base font-medium px-8 py-4 rounded-xl shadow-lg shadow-emerald-900/20 transition inline-block">
-                Vraag Direct Een Fiscale Toelichting Aan
-            </a>
+    <section class="relative overflow-hidden py-24 px-4 border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.08),transparent_45%)]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Volledig conform wetgeving 2026
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight md:leading-none">
+                Zet uw auto op naam van de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">BV als Promotie-Object</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed">
+                Rijd onbeperkt privé zonder fiscale bijtelling. Maak gebruik van de legale marketing-route via magneetstickers en sluitende GPS-verificatie.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-lg shadow-emerald-900/30 text-center">
+                    Start uw Fiscale Toetsing
+                </a>
+                <a href="#hoe-het-werkt" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-4 rounded-xl font-medium text-base transition text-center">
+                    Bekijk de werking
+                </a>
+            </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 pb-20 flex justify-center">
-        <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-xl w-full max-w-3xl aspect-video relative border border-slate-800 flex items-end justify-center">
-            <img
-                src="https://image.pollinations.ai/prompt/A_luxurious_sleek_glossy_black_Mercedes_AMG_sports_car_parked_inside_a_clean_modern_high_end_luxury_garage._The_car_is_shot_from_a_powerful_front_three_quarter_view_not_moving._A_highly_detailed_and_visible_Dutch_license_plate_with_the_text_12-15-A89_is_mounted_on_the_front._On_the_side_of_the_car_is_a_sharp_subtle_magnetic_magnetic_sticker_with_a_QR_code_and_the_text_PROMOTIE._Professional_automotive_studio_lighting_ultra_realistic_sharp_focus?width=1200&height=675&nologo=true"
-                alt="Mercedes AMG met PROMOTIE magneetsticker"
-                style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:75%; height:auto; object-fit:contain;"
-            />
+    <section id="hoe-het-werkt" class="py-24 px-4 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">De waterdichte 3-staps methode</h2>
+                <p class="mt-4 text-slate-400">Hoe wij uw voertuig transformeren in een legitiem, onbelast marketingkanaal voor uw onderneming.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl relative">
+                    <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6">1</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Magneetbestickering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Uw voertuig wordt voorzien van hoogwaardige, makkelijk verwijderbare promotie-stickers van uw BV inclusief een unieke, scanbare QR-code.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl relative">
+                    <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6">2</div>
+                    <h3 class="text-xl font-bold text-white mb-3">QR & GPS Verificatie</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Wanneer voorbijgangers uw rijdende reclame scannen, logt ons platform de exacte GPS-locatie. Dit levert het onomstotelijke bewijs van marketing-activiteit voor de fiscus.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl relative">
+                    <div class="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6">3</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Geen Bijtelling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Omdat de auto puur fungeert als zakelijk promotie-object (en niet als regulier ter beschikking gestelde auto), vervalt de grondslag voor de loonbelasting-bijtelling.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="bg-slate-900 border-y border-slate-950 py-20 text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight">Hoe het werkt</h2>
+    <section id="pakketten" class="py-24 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Kies uw Fiscotrack opstelling</h2>
+                <p class="mt-4 text-slate-400">Alles wat u nodig heeft om uw administratie volledig dicht te timmeren tegen controle.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between relative">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Pakket Brons</h3>
+                        <p class="mt-2 text-sm text-slate-400">Ideaal voor de startende DGA die de constructie veilig wil opzetten.</p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                            <span class="text-4xl font-extrabold tracking-tight text-white">€ 349</span>
+                            <span class="text-sm font-semibold text-slate-400">/ eenmalig ex btw</span>
+                        </p>
+                        <ul class="mt-8 space-y-3 text-sm text-slate-300 border-t border-slate-800/60 pt-6">
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> 2x Premium Magneetstickers op maat</li>
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Unieke QR-code tracking link</li>
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Juridisch modelcontract voor de BV</li>
+                            <li class="flex items-center gap-3"><span class="text-slate-600">✕</span> Persoonlijke accountancy check</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block w-full bg-slate-800 hover:bg-slate-750 text-white font-semibold py-3 px-4 rounded-xl text-center text-sm transition border border-slate-700">
+                        Kies Brons
+                    </a>
+                </div>
+                <div class="bg-slate-900 border-2 border-emerald-500 rounded-3xl p-8 flex flex-col justify-between relative shadow-xl shadow-emerald-950/20">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-slate-950 font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Meest gekozen</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Pakket Zilver</h3>
+                        <p class="mt-2 text-sm text-slate-400">Volledige ontzorging inclusief directe afstemming met uw adviseur.</p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                            <span class="text-4xl font-extrabold tracking-tight text-white">€ 549</span>
+                            <span class="text-sm font-semibold text-slate-400">/ eenmalig ex btw</span>
+                        </p>
+                        <ul class="mt-8 space-y-3 text-sm text-slate-300 border-t border-slate-800/60 pt-6">
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> 2x Premium Magneetstickers op maat</li>
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Unieke QR-code tracking link</li>
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> Juridisch modelcontract voor de BV</li>
+                            <li class="flex items-center gap-3"><span class="text-emerald-500">✓</span> <strong>Directe review & support voor uw accountant</strong></li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="mt-8 block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl text-center text-sm transition shadow-md shadow-emerald-900/20">
+                        Kies Zilver (Aanbevolen)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 px-4 bg-slate-900/20 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-12">Veelgestelde vragen</h2>
+            <div class="space-y-6">
+                <div class="bg-slate-900 border border-slate-800/60 p-6 rounded-xl">
+                    <h3 class="text-base font-bold text-white mb-2">Accepteert de Belastingdienst dit zomaar?</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">De fiscus toetst op realiteit en zakelijkheid. Omdat uw auto aantoonbaar wordt ingezet om de naamsbekendheid van uw BV te vergroten (bewezen via de stickers en de digitale QR-scans), kwalificeert het voertuig als een zakelijk bedrijfsmiddel/promotie-object en niet als een 'ter beschikking gestelde personenauto'.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/60 p-6 rounded-xl">
+                    <h3 class="text-base font-bold text-white mb-2">Moet ik alsnog een kilometerregistratie bijhouden?</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Nee, dat is juist het grote voordeel! De rittenregistratie (de bekende 500-kilometergrens) is alleen van toepassing bij normale auto's van de zaak. Bij een legitiem promotie-object vervalt die verplichting volledig, omdat de bijtellingsregels simpelweg niet van toepassing zijn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-4 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Vraag uw Fiscale Toetsing aan</h2>
+                <p class="mt-3 text-sm text-slate-400">Vul uw gegevens in. Wij beoordelen binnen 24 uur of uw voertuig en BV in aanmerking komen voor de onbelaste promotie-vrijstelling.</p>
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
-                    <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/30 rounded-lg flex items-center justify-center text-emerald-400 font-bold mb-4">1</div>
-                    <h3 class="text-lg font-bold text-white">Zakelijk marketingobject</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        Wij rusten de auto uit met professionele, subtiele magneetstickers en een unieke QR-code van uw BV. De auto verandert hierdoor juridisch in een bedrijfsinvestering voor lokale naamsbekendheid.
-                    </p>
+            <form action="https://formspree.io/f/xgoqenzk" method="POST" class="space-y-5 bg-slate-950 p-8 rounded-2xl border border-slate-800">
+                <div>
+                    <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Uw Naam</label>
+                    <input type="text" name="naam" id="name" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
                 </div>
-                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
-                    <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/30 rounded-lg flex items-center justify-center text-emerald-400 font-bold mb-4">2</div>
-                    <h3 class="text-lg font-bold text-white">Kilometervergoeding</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        Ons platform houdt de gereden promotie-kilometers nauwkeurig bij. Uw BV betaalt de bestuurder hiervoor een onbelaste marketingvergoeding. Dit geld stroomt direct belastingvrij uit de BV.
-                    </p>
+                <div>
+                    <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">E-mailadres (Zakelijk)</label>
+                    <input type="email" name="email" id="email" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
                 </div>
-                <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/50">
-                    <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/30 rounded-lg flex items-center justify-center text-emerald-400 font-bold mb-4">3</div>
-                    <h3 class="text-lg font-bold text-white">Volledig ontzorgd</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        De auto behoudt de officiële dealergarantie. Na de contractperiode ruilt u de auto bij ons in voor een nieuwer model. Uw jaarlijkse privé-schenkingsvrijstelling blijft 100% onaangetast.
-                    </p>
+                <div>
+                    <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Telefoonnummer (Optioneel)</label>
+                    <input type="tel" name="telefoon" id="phone" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
                 </div>
-            </div>
+                <div>
+                    <label for="package" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Gewenste Opstelling</label>
+                    <select name="pakket" id="package" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
+                        <option value="brons">Pakket Brons — € 349</option>
+                        <option value="zilver" selected>Pakket Zilver — € 549 (Aanbevolen)</option>
+                    </select>
+                </div>
+                <div class="pt-2">
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" required class="mt-1 accent-emerald-500 rounded border-slate-800 bg-slate-900">
+                        <span class="text-xs text-slate-400 leading-normal">Ik ga akkoord met de verwerking van mijn gegevens conform de <a href="privacy.html" class="text-emerald-400 underline hover:text-emerald-300">privacyverklaring</a>.</span>
+                    </label>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl text-base transition shadow-md shadow-emerald-900/20 mt-4">
+                    Aanvraag Bevestigen
+                </button>
+            </form>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 py-20">
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 text-center tracking-tight">Onze Pakketten</h2>
-        
-        <div class="grid md:grid-cols-3 gap-8 mt-12">
-            <div class="bg-white border border-slate-200 rounded-xl p-6 flex flex-col justify-between shadow-sm">
-                <div>
-                    <h3 class="text-lg font-bold text-slate-900">Pakket Brons</h3>
-                    <p class="text-sm text-slate-500 mt-1">Alleen het marketingsysteem</p>
-                    <p class="mt-4 text-slate-600 text-sm">Voor ondernemers die al een voertuig bezitten en puur de QR-tracking en magneetstickers van PROMOTIE willen implementeren.</p>
-                </div>
-                <a href="#contact" class="mt-8 block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 py-2 rounded-lg text-sm font-semibold transition">Aanvragen</a>
-            </div>
-            <div class="bg-white border-2 border-emerald-600 rounded-xl p-6 flex flex-col justify-between shadow-md relative">
-                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Meest gekozen</span>
-                <div>
-                    <h3 class="text-lg font-bold text-slate-900">Pakket Zilver</h3>
-                    <p class="text-sm text-emerald-600 mt-1 font-medium">Jonge occasion</p>
-                    <p class="mt-4 text-slate-600 text-sm">Een betrouwbare, jonge gebruikte auto (bijv. VW Polo/Golf) volledig rijklaar inclusief het complete fiscus-proof marketingsysteem.</p>
-                </div>
-                <a href="#contact" class="mt-8 block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg text-sm font-semibold transition">Aanvragen</a>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-xl p-6 flex flex-col justify-between shadow-sm">
-                <div>
-                    <h3 class="text-lg font-bold text-slate-900">Pakket Goud</h3>
-                    <p class="text-sm text-slate-500 mt-1">Premium Lease / Koop</p>
-                    <p class="mt-4 text-slate-600 text-sm">Een splinternieuw voertuig naar keuze, direct ingezet als officieel advertentie-object met maximale fiscale afschrijving.</p>
-                </div>
-                <a href="#contact" class="mt-8 block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-800 py-2 rounded-lg text-sm font-semibold transition">Aanvragen</a>
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-center text-xs text-slate-500 px-4">
+        <div class="max-w-4xl mx-auto">
+            <p>&copy; 2026 Fiscotrack. Alle rechten voorbehouden. Fiscale structuren dienen altijd vooraf te worden getoetst door uw eigen accountant of belastingadviseur.</p>
+            <div class="mt-4 space-x-6">
+                <a href="privacy.html" class="text-slate-400 hover:text-emerald-500 transition underline underline-offset-4">
+                    Privacyverklaring (AVG)
+                </a>
             </div>
         </div>
-    </section>
-
-    <section class="bg-slate-900 text-white py-20">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center tracking-tight">Veelgestelde vragen</h2>
-            
-            <div class="mt-12 space-y-8">
-                <div>
-                    <h3 class="text-lg font-semibold text-emerald-400">Waarom accepteert de Belastingdienst dit?</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        Omdat er een aantoonbare zakelijke tegenprestatie tegenover staat. Ons platform registreert maandelijks de marketingdata via de unieke QR-codes op de magneetstickers. Dit is uw sluitende bewijs bij een fiscuscontrole.
-                    </p>
-                </div>
-                <div class="border-t border-slate-800 pt-6">
-                    <h3 class="text-lg font-semibold text-emerald-400">Hoe zit het met de autoverzekering en schadevrije jaren?</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        De vaste bestuurder (uw partner of kind) staat officieel geregistreerd op de polis. Hierdoor bouwt de bestuurder vanaf dag één zelfstandig schadevrije jaren op, die later meegenomen kunnen worden.
-                    </p>
-                </div>
-                <div class="border-t border-slate-800 pt-6">
-                    <h3 class="text-lg font-semibold text-emerald-400">Wat zijn de voorwaarden voor inruil?</h3>
-                    <p class="mt-2 text-slate-400 text-sm leading-relaxed">
-                        Wij leggen een gegarandeerde terugkoopwaarde vast in het contract. Na verloop van tijd levert u de auto zonder gedoe bij ons in en stapt u direct over naar een nieuwer model onder dezelfde gunstige fiscale voordelen.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── CONTACTFORMULIER — Formspree ── -->
-    <section id="contact" class="max-w-md mx-auto px-4 py-20 text-center">
-        <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Vraag een adviesgesprek aan</h2>
-        <p class="mt-2 text-sm text-slate-600">Laat uw gegevens achter. Wij nemen binnen één werkdag contact op om de fiscale mogelijkheden voor uw BV te bespreken.</p>
-
-        <!--
-            ╔══════════════════════════════════════════════════════╗
-            ║  FORMSPREE INSTELLEN — 3 stappen:                   ║
-            ║  1. Ga naar https://formspree.io en maak een account ║
-            ║  2. Maak een nieuw formulier aan                     ║
-            ║  3. Vervang HIER_JE_FORMSPREE_ID hieronder           ║
-            ║     door jouw eigen ID (bijv. xpwzgkla)             ║
-            ╚══════════════════════════════════════════════════════╝
-        -->
-        <form
-            action="https://formspree.io/f/HIER_JE_FORMSPREE_ID"
-            method="POST"
-            class="mt-8 space-y-4 text-left"
-            id="contactForm"
-        >
-            <!-- Formspree stuurt de bevestiging terug naar deze pagina -->
-            <input type="hidden" name="_next" value="https://JOUW-DOMEIN/index.html?verzonden=1">
-            <!-- Spam-honeypot (onzichtbaar voor mensen, pakt bots af) -->
-            <input type="text" name="_gotcha" style="display:none">
-
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Naam</label>
-                <input type="text" name="naam" placeholder="Uw naam" required
-                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">E-mailadres</label>
-                <input type="email" name="email" placeholder="ondernemer@bedrijf.nl" required
-                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Telefoonnummer <span class="normal-case font-normal text-slate-400">(optioneel)</span></label>
-                <input type="tel" name="telefoon" placeholder="+31 6 12345678"
-                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Pakket interesse</label>
-                <select name="pakket"
-                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition text-slate-700">
-                    <option value="">— Selecteer een pakket —</option>
-                    <option value="Brons">Pakket Brons — Eigen auto + marketingsysteem</option>
-                    <option value="Zilver">Pakket Zilver — Jonge occasion</option>
-                    <option value="Goud">Pakket Goud — Premium Lease / Koop</option>
-                    <option value="Nog niet zeker">Nog niet zeker, graag advies</option>
-                </select>
-            </div>
-
-            <!-- AVG-toestemming checkbox -->
-            <div class="flex items-start gap-3 pt-1">
-                <input type="checkbox" name="akkoord_privacy" id="privacy" required
-                    class="mt-0.5 accent-emerald-600 w-4 h-4 flex-shrink-0">
-                <label for="privacy" class="text-xs text-slate-500 leading-relaxed">
-                    Ik ga akkoord met de
-                    <a href="privacy.html" class="text-emerald-600 hover:underline" target="_blank">privacyverklaring</a>.
-                    Mijn gegevens worden uitsluitend gebruikt voor de gevraagde fiscale adviesaanvraag.
-                </label>
-            </div>
-
-            <button type="submit"
-                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg text-sm transition mt-2 shadow-md">
-                Verstuur Aanvraag →
-            </button>
-        </form>
-
-        <!-- Bevestigingsmelding na verzenden -->
-        <div id="successMsg" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-sm text-emerald-800 text-left">
-            <strong>✓ Aanvraag ontvangen!</strong> Wij nemen binnen één werkdag contact met u op.
-        </div>
-    </section>
-
-    <!-- ── FOOTER met privacy-link ── -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-400">
-        &copy; 2026 PROMOTIE. Alle rechten voorbehouden. Fiscale structuren dienen altijd te worden getoetst door uw eigen accountant.
-        <br class="mt-1">
-        <a href="privacy.html" class="mt-2 inline-block text-slate-400 hover:text-emerald-600 transition underline underline-offset-2">
-            Privacyverklaring (AVG)
-        </a>
     </footer>
-
-    <script>
-        // Toon succesmelding als Formspree terugkeert met ?verzonden=1
-        if (window.location.search.includes('verzonden=1')) {
-            document.getElementById('successMsg').classList.remove('hidden');
-            document.getElementById('contactForm').classList.add('hidden');
-        }
-    </script>
 
 </body>
 </html>
