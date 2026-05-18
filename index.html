@@ -36,7 +36,6 @@
         </div>
     </section>
 
-    <!-- ── AFBEELDING: img met object-fit:contain zodat de auto niet uitrekt ── -->
     <section class="max-w-6xl mx-auto px-4 pb-20 flex justify-center">
         <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-xl w-full max-w-3xl aspect-video relative border border-slate-800 flex items-end justify-center">
             <img
@@ -136,28 +135,97 @@
         </div>
     </section>
 
+    <!-- ── CONTACTFORMULIER — Formspree ── -->
     <section id="contact" class="max-w-md mx-auto px-4 py-20 text-center">
         <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Vraag een adviesgesprek aan</h2>
         <p class="mt-2 text-sm text-slate-600">Laat uw gegevens achter. Wij nemen binnen één werkdag contact op om de fiscale mogelijkheden voor uw BV te bespreken.</p>
-        
-        <form class="mt-8 space-y-4 text-left">
+
+        <!--
+            ╔══════════════════════════════════════════════════════╗
+            ║  FORMSPREE INSTELLEN — 3 stappen:                   ║
+            ║  1. Ga naar https://formspree.io en maak een account ║
+            ║  2. Maak een nieuw formulier aan                     ║
+            ║  3. Vervang HIER_JE_FORMSPREE_ID hieronder           ║
+            ║     door jouw eigen ID (bijv. xpwzgkla)             ║
+            ╚══════════════════════════════════════════════════════╝
+        -->
+        <form
+            action="https://formspree.io/f/HIER_JE_FORMSPREE_ID"
+            method="POST"
+            class="mt-8 space-y-4 text-left"
+            id="contactForm"
+        >
+            <!-- Formspree stuurt de bevestiging terug naar deze pagina -->
+            <input type="hidden" name="_next" value="https://JOUW-DOMEIN/index.html?verzonden=1">
+            <!-- Spam-honeypot (onzichtbaar voor mensen, pakt bots af) -->
+            <input type="text" name="_gotcha" style="display:none">
+
             <div>
                 <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Naam</label>
-                <input type="text" placeholder="Uw naam" class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
+                <input type="text" name="naam" placeholder="Uw naam" required
+                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
             </div>
             <div>
                 <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">E-mailadres</label>
-                <input type="email" placeholder="ondernemer@bedrijf.nl" class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
+                <input type="email" name="email" placeholder="ondernemer@bedrijf.nl" required
+                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
             </div>
-            <button type="submit" onclick="alert('Bedankt voor uw aanvraag! (Dit is een demo)'); return false;" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg text-sm transition mt-2 shadow-md">
-                Verzenden
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Telefoonnummer <span class="normal-case font-normal text-slate-400">(optioneel)</span></label>
+                <input type="tel" name="telefoon" placeholder="+31 6 12345678"
+                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider">Pakket interesse</label>
+                <select name="pakket"
+                    class="mt-1 block w-full px-4 py-3 bg-white border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-emerald-500 transition text-slate-700">
+                    <option value="">— Selecteer een pakket —</option>
+                    <option value="Brons">Pakket Brons — Eigen auto + marketingsysteem</option>
+                    <option value="Zilver">Pakket Zilver — Jonge occasion</option>
+                    <option value="Goud">Pakket Goud — Premium Lease / Koop</option>
+                    <option value="Nog niet zeker">Nog niet zeker, graag advies</option>
+                </select>
+            </div>
+
+            <!-- AVG-toestemming checkbox -->
+            <div class="flex items-start gap-3 pt-1">
+                <input type="checkbox" name="akkoord_privacy" id="privacy" required
+                    class="mt-0.5 accent-emerald-600 w-4 h-4 flex-shrink-0">
+                <label for="privacy" class="text-xs text-slate-500 leading-relaxed">
+                    Ik ga akkoord met de
+                    <a href="privacy.html" class="text-emerald-600 hover:underline" target="_blank">privacyverklaring</a>.
+                    Mijn gegevens worden uitsluitend gebruikt voor de gevraagde fiscale adviesaanvraag.
+                </label>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-lg text-sm transition mt-2 shadow-md">
+                Verstuur Aanvraag →
             </button>
         </form>
+
+        <!-- Bevestigingsmelding na verzenden -->
+        <div id="successMsg" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-sm text-emerald-800 text-left">
+            <strong>✓ Aanvraag ontvangen!</strong> Wij nemen binnen één werkdag contact met u op.
+        </div>
     </section>
 
+    <!-- ── FOOTER met privacy-link ── -->
     <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-400">
         &copy; 2026 PROMOTIE. Alle rechten voorbehouden. Fiscale structuren dienen altijd te worden getoetst door uw eigen accountant.
+        <br class="mt-1">
+        <a href="privacy.html" class="mt-2 inline-block text-slate-400 hover:text-emerald-600 transition underline underline-offset-2">
+            Privacyverklaring (AVG)
+        </a>
     </footer>
+
+    <script>
+        // Toon succesmelding als Formspree terugkeert met ?verzonden=1
+        if (window.location.search.includes('verzonden=1')) {
+            document.getElementById('successMsg').classList.remove('hidden');
+            document.getElementById('contactForm').classList.add('hidden');
+        }
+    </script>
 
 </body>
 </html>
